@@ -25,3 +25,4 @@ build/
 github--*.zip
 
 **/.DS_STORE
+pharo.code-workspace
