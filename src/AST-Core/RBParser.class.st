@@ -292,7 +292,7 @@ RBParser >> parseAssignment [
 	currentToken isAssignment ifTrue: [
 		err := self parseErrorNode: 'variable expected in assigment'.
 		self step. "Consume the :="
-		node := self parseAssignment. "parse the right side".
+		node := self parseAssignment. "parse the right side"
 		node := RBAssignmentErrorNode from: err contents: { node }.
 		node value: ':='.
 		^ node
